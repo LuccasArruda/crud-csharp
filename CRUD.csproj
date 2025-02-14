@@ -7,4 +7,24 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Compile Remove="CRUD.Domain\CRUD.API\**" />
+      <Compile Remove="CRUD.API\**" />
+      <Compile Remove="CRUD.Domain\**" />
+      <Compile Remove="API\Program.cs" />
+      <Compile Remove="API\Produto.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="CRUD.Domain\CRUD.API\**" />
+      <EmbeddedResource Remove="CRUD.API\**" />
+      <EmbeddedResource Remove="CRUD.Domain\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="CRUD.Domain\CRUD.API\**" />
+      <None Remove="CRUD.API\**" />
+      <None Remove="CRUD.Domain\**" />
+    </ItemGroup>
+
 </Project>
