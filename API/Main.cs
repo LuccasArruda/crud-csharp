@@ -1,4 +1,5 @@
 ﻿using System;
+using CRUD.Domain.Entities;
 
 namespace CRUD.API;
 
@@ -8,18 +9,12 @@ public class Main
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Olá, mundo!");
-            
-            // Exemplo de lógica adicional
-            int a = 10;
-            int b = 20;
-            int resultado = Somar(a, b);
-            Console.WriteLine($"A soma de {a} e {b} é {resultado}");
-        }
-
-        static int Somar(int x, int y)
-        {
-            return x + y;
+            Cliente[] clientes =
+            [
+                new Cliente("Joice", "joice@gmail.com", "+55 (19)99821-5589"),
+                new Cliente("Kekele", "kekeleyabo@gmail.com", "+55 (19)99238-6419"),
+            ];
+            clientes[0].DescreverCliente();
         }
     }
   
